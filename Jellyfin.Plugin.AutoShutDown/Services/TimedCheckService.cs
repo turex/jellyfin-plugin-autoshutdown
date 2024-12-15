@@ -15,7 +15,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Jellyfin.Plugin.AutoShutDown.Services
 {
-    public sealed class TimedCheckService : IServerEntryPoint
+    public sealed class TimedCheckService
     {
         private static Lazy<BaseShutDown> _lazyShutDown;
         private static int _initialDelayInMin = PluginConfiguration.DefaultInitialDelay;
